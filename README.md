@@ -1,6 +1,15 @@
 # Java-SpringBoot-Angular-UserCreationApp
 
 Instruction:
+Building the project
+1. Since Github has limitation on my storage, I cannot upload the jar file.
+2. Open the terminal and change the working directory to the angularclient folder.
+3. Enter this command to build the angular project:      ng build --configuration production
+4. It takes a few minutes to build the angular project. The output is stored in the UserCreationApp\src\main\resources\static folder.
+5. Change the working directory of the terminal to UserCreationApp.
+6. Enter this command to build the SpringBoot application:      mvn clean install
+7. It takes a few minutes to build. The output is stored in the UserCreationApp\target folder.
+
 Executing the file
 1. Open the command line terminal and point it to the directory: Java-SpringBoot-Angular-UserCreationApp\UserCreationApp\target
 2. Enter this command to run the jar file:      java -jar ./UserCreationApp-0.0.1-SNAPSHOT.jar
@@ -23,5 +32,5 @@ Adding a new user
 2. Enter the first name and last name of a new user, then click the submit button.
 3. You can view the data on the next page.
 
-Retrieve a user info by id
+Retrieving a user info by id
 1. The http://localhost:8080/users/{id} directs you to a page with the info of a particular user with the same id.
